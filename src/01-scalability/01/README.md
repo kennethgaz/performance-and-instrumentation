@@ -1,6 +1,6 @@
 # Escalabilidade Nginx Load Balance + Docker
 
-### Steps 1 - Criação da Aplicação e Imagem Docker (pra quem quiser a imagem pronta: pedroarapua/node-web-app:latest)
+### Steps 1 - Criação da Aplicação e Imagem Docker
 * Criar uma api de Hello World, expondo a mesma na porta 3000
 * Criar Dockerfile para rodar a aplicação
 * Criar imagem local
@@ -13,7 +13,7 @@ docker build -f <docker file path + docker file name> -t scalability/node-web-ap
 ```
 docker run -p 3001:3000 -d scalability/node-web-app
 ```
-* Validar se a api ta respondendo na porta 3001
+* Validar se a API está respondendo na porta 3001
 ```
 curl http://localhost:3001
 ```
@@ -21,7 +21,7 @@ curl http://localhost:3001
 ```
 docker run -p 3002:3000 -d scalability/node-web-app
 ```
-* Validar se a api ta respondendo na porta 3002
+* Validar se a API está respondendo na porta 3002
 ```
 curl http://localhost:3002
 ```
@@ -41,7 +41,7 @@ docker build -f <docker file path + docker file name> -t scalability/nginxloadba
 ```
 docker run -p 3000:80 -d scalability/nginxloadbalance
 ```
-* Validar se a api ta respondendo na porta 3002
+* Validar se a API está alternando entre as portas 3001 e 3002
 ```
 curl http://localhost:3000
 ```
