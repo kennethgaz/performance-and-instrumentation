@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pedroarapua/performance-and-instrumentation.git"
+    "url": "git+https://github.com/kennethgaz/performance-and-instrumentation.git"
   },
-  "author": "Pedro Henrique F. Dias",
+  "author": "Kenneth G. de Azevedo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pedroarapua/performance-and-instrumentation/issues"
+    "url": "https://github.com/kennethgaz/performance-and-instrumentation/issues"
   },
-  "homepage": "https://github.com/pedroarapua/performance-and-instrumentation#readme",
+  "homepage": "https://github.com/kennethgaz/performance-and-instrumentation#readme",
   "dependencies": {
     "bunyan": "^1.8.14",
     "bunyan-logstash-tcp": "^1.0.0",
